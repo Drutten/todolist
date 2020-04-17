@@ -1,5 +1,6 @@
 {
-  "name": "myfirstreactapp",
+  "homepage": "https://drutten.github.io/todolist",
+  "name": "todolist",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -10,12 +11,16 @@
     "@types/node": "^12.12.29",
     "@types/react": "^16.9.23",
     "@types/react-dom": "^16.9.5",
+    "node-sass": "^4.13.1",
     "react": "^16.13.0",
+    "react-app-polyfill": "^1.0.6",
     "react-dom": "^16.13.0",
     "react-scripts": "3.4.0",
     "typescript": "^3.7.5"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -33,7 +38,11 @@
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
-      "last 1 safari version"
+      "last 1 safari version",
+      "ie 11"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
   }
 }
