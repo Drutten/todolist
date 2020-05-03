@@ -4,6 +4,10 @@ form{
     input[type=text] {
         padding: 8px;
         border-radius: 3px;
+
+        @media (max-width: 400px){
+            width: 80px;
+        }
     }
 
     input[type=submit] {

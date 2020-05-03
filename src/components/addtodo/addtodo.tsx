@@ -31,7 +31,7 @@ export class AddTodo extends React.Component<IAddTodoProps, IAddTodoState> {
         this.setState({
             newTodo: {name: event.target.value, done: false, id: 0}
         });  
-    }
+    } 
 
     
     //event handler för submit

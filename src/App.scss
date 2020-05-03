@@ -7,6 +7,10 @@
   color: rgb(255, 255, 255);
   padding: 50px;
 
+  @media (max-width: 400px){
+    padding: 20px;
+  }
+
   h1{
     margin-top: 100px;
     font-family: 'Caveat', cursive;

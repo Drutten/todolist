@@ -7,6 +7,11 @@
     margin: 10px;
     border: 1px solid rgba(109, 143, 107, 0.7);
 
+    @media (max-width: 400px){
+        font-size: 20px;
+        padding: 8px 16px;
+    }
+
     & > div {
         display: flex;
         flex-direction: row;
@@ -14,11 +19,16 @@
 
         .icons {
             margin-left: 30px;
+
         }
     }
 
     span {
         margin-left: 20px;
+
+        @media (max-width: 400px){
+            margin-left: 10px;
+        }
     }
     span:first-child:hover {
         cursor: pointer;
